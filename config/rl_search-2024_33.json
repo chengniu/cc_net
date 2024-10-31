@@ -1,0 +1,19 @@
+{
+  "output_dir": "/mnt/md0/juntong/data/data_2024-33",
+  "lang_whitelist": ["en"],
+  "keep_bucket": ["head", "middle"],
+  "dump": "2024-33",
+  "num_shards": 1600,
+  "hash_in_mem": 5,
+  "cache_dir": "/mnt/md0/juntong/wet_cache/",
+  "pipeline": [
+    "dedup",
+    "lid",
+    "keep_lang",
+    "sp",
+    "lm",
+    "pp_bucket",
+    "drop",
+    "split_by_lang"
+  ]
+}
